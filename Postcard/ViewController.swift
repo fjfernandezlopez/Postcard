@@ -15,6 +15,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var enterMessageTextField: UITextField!
     @IBOutlet weak var mailButton: UIButton!
     
+    @IBOutlet weak var labelName: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -32,8 +34,15 @@ class ViewController: UIViewController {
         labelMessage.hidden = false
         labelMessage.textColor = UIColor.redColor()
         
+        labelName.text=enterNameTextField.text
+        labelName.hidden = false
+        labelName.textColor = UIColor.blueColor()
+        
         enterMessageTextField.text = ""
         enterMessageTextField.resignFirstResponder()
+        
+        enterNameTextField.text = ""
+        enterNameTextField.resignFirstResponder()
         
         mailButton.setTitle("Mail sent", forState: UIControlState.Normal)
         

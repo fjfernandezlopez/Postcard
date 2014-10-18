@@ -101,6 +101,15 @@
                                     <rect key="frame" x="16" y="72" width="331" height="58"/>
                                 </variation>
                             </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kwn-he-ike">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="137" width="208" height="38"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -110,6 +119,7 @@
                                 <exclude reference="EV9-FQ-3Up"/>
                                 <exclude reference="onQ-48-OC6"/>
                                 <exclude reference="Zzd-nz-lfq"/>
+                                <exclude reference="Kwn-he-ike"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -119,6 +129,7 @@
                                 <include reference="EV9-FQ-3Up"/>
                                 <include reference="onQ-48-OC6"/>
                                 <include reference="Zzd-nz-lfq"/>
+                                <include reference="Kwn-he-ike"/>
                             </mask>
                         </variation>
                     </view>
@@ -126,6 +137,7 @@
                         <outlet property="enterMessageTextField" destination="EV9-FQ-3Up" id="xnx-SK-1Mu"/>
                         <outlet property="enterNameTextField" destination="R0o-HY-lnd" id="YFO-0B-i8Z"/>
                         <outlet property="labelMessage" destination="Zzd-nz-lfq" id="Yh9-YQ-FAV"/>
+                        <outlet property="labelName" destination="Kwn-he-ike" id="gfU-jL-vHg"/>
                         <outlet property="mailButton" destination="onQ-48-OC6" id="9Jd-zc-qdH"/>
                     </connections>
                 </viewController>
